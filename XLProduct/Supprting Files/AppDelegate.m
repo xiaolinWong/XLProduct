@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "YTKNetworkConfig.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,67 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //设置网络参数
+    [self setupCustomProperty];
+    //设置主控制器
+    [self setupRootViewController];
+    
+    
+    
+    
     return YES;
+}
+
+//设置主控制器
+- (void)setupRootViewController
+{
+   
+    if ([HCAppMgr manager].showInstroView)
+    {
+        //self.window.rootViewController = [[HCWelcomViewController alloc] init];
+        [self chageRootViewControll: [[UIViewController alloc] init] animate:YES];
+    }else
+    {
+        [[HCAccountMgr manager] getLoginInfoData];
+        
+        if ([HCAccountMgr manager].isLogined) {
+            
+           
+            [self chageRootViewControll: [[UIViewController alloc] init] animate:YES];
+            
+        }else{
+            UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"XLLoginSB" bundle:nil];
+            
+            UINavigationController *nav=[storyBoard instantiateInitialViewController];
+            
+            // self.window.rootViewController = nav;
+            [self chageRootViewControll:nav animate:YES];
+            
+        }
+    }
+}
+-(void)chageRootViewControll:(UIViewController *)contorll animate:(BOOL)animate{
+    
+    //设置主控制器的动画
+    CATransition *transition=[CATransition animation];
+    transition.duration=animate?0:1.0;
+    transition.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type=kCATransitionFade;
+    self.window.rootViewController=contorll;
+    [self.window.layer addAnimation:transition forKey:@"animation"];
+    
+}
+
+- (void)setupCustomProperty
+{
+    
+    //设置网络端口
+//    YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
+//    config.baseUrl =kAPIURL;//外部
+    //    config.baseUrl = kAPIURLText;//测试
+    //    config.cdnUrl =  kIMGURL;
+    //添加token
+//    [NSURLProtocol registerClass:[XLMyURLProtocol class]];
 }
 
 

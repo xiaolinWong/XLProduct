@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04598DC01FEA03DC0025CDA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04598DBF1FEA03DC0025CDA9 /* AppDelegate.m */; };
-		04598DC31FEA03DC0025CDA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04598DC21FEA03DC0025CDA9 /* ViewController.m */; };
 		04598DC61FEA03DC0025CDA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04598DC41FEA03DC0025CDA9 /* Main.storyboard */; };
 		04598DC91FEA03DC0025CDA9 /* XLProduct.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04598DC71FEA03DC0025CDA9 /* XLProduct.xcdatamodeld */; };
 		04598DCB1FEA03DC0025CDA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04598DCA1FEA03DC0025CDA9 /* Assets.xcassets */; };
@@ -16,6 +15,14 @@
 		04598DD11FEA03DC0025CDA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04598DD01FEA03DC0025CDA9 /* main.m */; };
 		04598DDB1FEA03DC0025CDA9 /* XLProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04598DDA1FEA03DC0025CDA9 /* XLProductTests.m */; };
 		04598DE61FEA03DC0025CDA9 /* XLProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04598DE51FEA03DC0025CDA9 /* XLProductUITests.m */; };
+		04637E9520031E1C000CDD57 /* NSObject+BAHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 04637E8F20031E1C000CDD57 /* NSObject+BAHook.m */; };
+		04637E9720031E1C000CDD57 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 04637E9420031E1C000CDD57 /* NSString+MD5.m */; };
+		04637E9B20031E46000CDD57 /* UIImage+CFJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 04637E9A20031E45000CDD57 /* UIImage+CFJ.m */; };
+		04637E9F20031EAC000CDD57 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04637E9E20031EAB000CDD57 /* Utils.m */; };
+		04637EA820031F4C000CDD57 /* HCVersionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 04637EA420031F4B000CDD57 /* HCVersionMgr.m */; };
+		04637EAA20031F4C000CDD57 /* HCAppMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 04637EA720031F4C000CDD57 /* HCAppMgr.m */; };
+		04637EAD20032011000CDD57 /* HCAccountMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 04637EAB20032010000CDD57 /* HCAccountMgr.m */; };
+		E0A58386A3BBD8883BD2F2A9 /* libPods-XLProduct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA15AD9C81A1D95217E41C72 /* libPods-XLProduct.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +46,6 @@
 		04598DBB1FEA03DC0025CDA9 /* XLProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04598DBE1FEA03DC0025CDA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04598DBF1FEA03DC0025CDA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04598DC11FEA03DC0025CDA9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04598DC21FEA03DC0025CDA9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04598DC51FEA03DC0025CDA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04598DC81FEA03DC0025CDA9 /* XLProduct.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XLProduct.xcdatamodel; sourceTree = "<group>"; };
 		04598DCA1FEA03DC0025CDA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +58,26 @@
 		04598DE11FEA03DC0025CDA9 /* XLProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04598DE51FEA03DC0025CDA9 /* XLProductUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLProductUITests.m; sourceTree = "<group>"; };
 		04598DE71FEA03DC0025CDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04637E8920030016000CDD57 /* XLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLMacros.h; sourceTree = "<group>"; };
+		04637E8A200302BF000CDD57 /* XLColorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLColorMacros.h; sourceTree = "<group>"; };
+		04637E8B200303EC000CDD57 /* XLHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLHeader.pch; sourceTree = "<group>"; };
+		04637E8E20031E1C000CDD57 /* NSObject+BAHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BAHook.h"; sourceTree = "<group>"; };
+		04637E8F20031E1C000CDD57 /* NSObject+BAHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BAHook.m"; sourceTree = "<group>"; };
+		04637E9320031E1C000CDD57 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		04637E9420031E1C000CDD57 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		04637E9920031E45000CDD57 /* UIImage+CFJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CFJ.h"; sourceTree = "<group>"; };
+		04637E9A20031E45000CDD57 /* UIImage+CFJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CFJ.m"; sourceTree = "<group>"; };
+		04637E9D20031EAB000CDD57 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		04637E9E20031EAB000CDD57 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		04637EA220031F4B000CDD57 /* HCVersionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCVersionMgr.h; sourceTree = "<group>"; };
+		04637EA320031F4B000CDD57 /* HCAppMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAppMgr.h; sourceTree = "<group>"; };
+		04637EA420031F4B000CDD57 /* HCVersionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCVersionMgr.m; sourceTree = "<group>"; };
+		04637EA720031F4C000CDD57 /* HCAppMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAppMgr.m; sourceTree = "<group>"; };
+		04637EAB20032010000CDD57 /* HCAccountMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAccountMgr.m; sourceTree = "<group>"; };
+		04637EAC20032010000CDD57 /* HCAccountMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAccountMgr.h; sourceTree = "<group>"; };
+		3123FF29C041351B3A009BFC /* Pods-XLProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLProduct/Pods-XLProduct.debug.xcconfig"; sourceTree = "<group>"; };
+		A24F3EC0B0C226A3C71BFEDC /* Pods-XLProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLProduct/Pods-XLProduct.release.xcconfig"; sourceTree = "<group>"; };
+		EA15AD9C81A1D95217E41C72 /* libPods-XLProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A58386A3BBD8883BD2F2A9 /* libPods-XLProduct.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +113,8 @@
 				04598DD91FEA03DC0025CDA9 /* XLProductTests */,
 				04598DE41FEA03DC0025CDA9 /* XLProductUITests */,
 				04598DBC1FEA03DC0025CDA9 /* Products */,
+				61AB54F14AD618E8F626C785 /* Pods */,
+				06C2BC6220523E565B76D1CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,16 +131,8 @@
 		04598DBD1FEA03DC0025CDA9 /* XLProduct */ = {
 			isa = PBXGroup;
 			children = (
-				04598DBE1FEA03DC0025CDA9 /* AppDelegate.h */,
-				04598DBF1FEA03DC0025CDA9 /* AppDelegate.m */,
-				04598DC11FEA03DC0025CDA9 /* ViewController.h */,
-				04598DC21FEA03DC0025CDA9 /* ViewController.m */,
-				04598DC41FEA03DC0025CDA9 /* Main.storyboard */,
-				04598DCA1FEA03DC0025CDA9 /* Assets.xcassets */,
-				04598DCC1FEA03DC0025CDA9 /* LaunchScreen.storyboard */,
-				04598DCF1FEA03DC0025CDA9 /* Info.plist */,
-				04598DD01FEA03DC0025CDA9 /* main.m */,
-				04598DC71FEA03DC0025CDA9 /* XLProduct.xcdatamodeld */,
+				04637E842002FEE3000CDD57 /* Class */,
+				04598DF31FEA06760025CDA9 /* Supprting Files */,
 			);
 			path = XLProduct;
 			sourceTree = "<group>";
@@ -135,6 +155,142 @@
 			path = XLProductUITests;
 			sourceTree = "<group>";
 		};
+		04598DF31FEA06760025CDA9 /* Supprting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04598DBE1FEA03DC0025CDA9 /* AppDelegate.h */,
+				04598DBF1FEA03DC0025CDA9 /* AppDelegate.m */,
+				04598DC41FEA03DC0025CDA9 /* Main.storyboard */,
+				04598DCA1FEA03DC0025CDA9 /* Assets.xcassets */,
+				04598DCC1FEA03DC0025CDA9 /* LaunchScreen.storyboard */,
+				04598DCF1FEA03DC0025CDA9 /* Info.plist */,
+				04598DD01FEA03DC0025CDA9 /* main.m */,
+				04637E8B200303EC000CDD57 /* XLHeader.pch */,
+				04598DC71FEA03DC0025CDA9 /* XLProduct.xcdatamodeld */,
+			);
+			path = "Supprting Files";
+			sourceTree = "<group>";
+		};
+		04637E842002FEE3000CDD57 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				04637E852002FF02000CDD57 /* Expand */,
+				04637E862002FF19000CDD57 /* main */,
+				04637E872002FF33000CDD57 /* Vender */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		04637E852002FF02000CDD57 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				04637EA120031F2D000CDD57 /* Manager */,
+				04637E8C20031E13000CDD57 /* Category */,
+				04637E882002FFDE000CDD57 /* Macros */,
+				04637E9C20031E9F000CDD57 /* Tool */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		04637E862002FF19000CDD57 /* main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		04637E872002FF33000CDD57 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		04637E882002FFDE000CDD57 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				04637E8920030016000CDD57 /* XLMacros.h */,
+				04637E8A200302BF000CDD57 /* XLColorMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		04637E8C20031E13000CDD57 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04637E9820031E45000CDD57 /* UIImage+Stretch */,
+				04637E8D20031E1C000CDD57 /* Button+BAHook */,
+				04637E9220031E1C000CDD57 /* NSString+MD5 */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04637E8D20031E1C000CDD57 /* Button+BAHook */ = {
+			isa = PBXGroup;
+			children = (
+				04637E8E20031E1C000CDD57 /* NSObject+BAHook.h */,
+				04637E8F20031E1C000CDD57 /* NSObject+BAHook.m */,
+			);
+			path = "Button+BAHook";
+			sourceTree = "<group>";
+		};
+		04637E9220031E1C000CDD57 /* NSString+MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				04637E9320031E1C000CDD57 /* NSString+MD5.h */,
+				04637E9420031E1C000CDD57 /* NSString+MD5.m */,
+			);
+			path = "NSString+MD5";
+			sourceTree = "<group>";
+		};
+		04637E9820031E45000CDD57 /* UIImage+Stretch */ = {
+			isa = PBXGroup;
+			children = (
+				04637E9920031E45000CDD57 /* UIImage+CFJ.h */,
+				04637E9A20031E45000CDD57 /* UIImage+CFJ.m */,
+			);
+			path = "UIImage+Stretch";
+			sourceTree = "<group>";
+		};
+		04637E9C20031E9F000CDD57 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				04637E9D20031EAB000CDD57 /* Utils.h */,
+				04637E9E20031EAB000CDD57 /* Utils.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		04637EA120031F2D000CDD57 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04637EA320031F4B000CDD57 /* HCAppMgr.h */,
+				04637EA720031F4C000CDD57 /* HCAppMgr.m */,
+				04637EA220031F4B000CDD57 /* HCVersionMgr.h */,
+				04637EA420031F4B000CDD57 /* HCVersionMgr.m */,
+				04637EAC20032010000CDD57 /* HCAccountMgr.h */,
+				04637EAB20032010000CDD57 /* HCAccountMgr.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		06C2BC6220523E565B76D1CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA15AD9C81A1D95217E41C72 /* libPods-XLProduct.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61AB54F14AD618E8F626C785 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3123FF29C041351B3A009BFC /* Pods-XLProduct.debug.xcconfig */,
+				A24F3EC0B0C226A3C71BFEDC /* Pods-XLProduct.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04598DEA1FEA03DC0025CDA9 /* Build configuration list for PBXNativeTarget "XLProduct" */;
 			buildPhases = (
+				9E83C58EF6EF763BCB836816 /* [CP] Check Pods Manifest.lock */,
 				04598DB71FEA03DC0025CDA9 /* Sources */,
 				04598DB81FEA03DC0025CDA9 /* Frameworks */,
 				04598DB91FEA03DC0025CDA9 /* Resources */,
+				3502CE3BC2A1229FAB1181F8 /* [CP] Embed Pods Frameworks */,
+				22B08AAA15C6B5C5A021E711 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,15 +422,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22B08AAA15C6B5C5A021E711 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XLProduct/Pods-XLProduct-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XLProduct/Pods-XLProduct-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3502CE3BC2A1229FAB1181F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XLProduct/Pods-XLProduct-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XLProduct/Pods-XLProduct-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E83C58EF6EF763BCB836816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XLProduct-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04598DB71FEA03DC0025CDA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04598DC91FEA03DC0025CDA9 /* XLProduct.xcdatamodeld in Sources */,
-				04598DC31FEA03DC0025CDA9 /* ViewController.m in Sources */,
 				04598DD11FEA03DC0025CDA9 /* main.m in Sources */,
+				04637EAD20032011000CDD57 /* HCAccountMgr.m in Sources */,
+				04637E9F20031EAC000CDD57 /* Utils.m in Sources */,
+				04637E9B20031E46000CDD57 /* UIImage+CFJ.m in Sources */,
 				04598DC01FEA03DC0025CDA9 /* AppDelegate.m in Sources */,
+				04637E9520031E1C000CDD57 /* NSObject+BAHook.m in Sources */,
+				04637EAA20031F4C000CDD57 /* HCAppMgr.m in Sources */,
+				04637EA820031F4C000CDD57 /* HCVersionMgr.m in Sources */,
+				04637E9720031E1C000CDD57 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +603,11 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/mac/Desktop/XLProduct/XLProduct/Supprting\\ Files/XLHeader.pch ";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -416,7 +660,10 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/mac/Desktop/XLProduct/XLProduct/Supprting\\ Files/XLHeader.pch ";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -432,27 +679,39 @@
 		};
 		04598DEB1FEA03DC0025CDA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3123FF29C041351B3A009BFC /* Pods-XLProduct.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = XLProduct/Info.plist;
+				DEVELOPMENT_TEAM = DG985695EK;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "/wxl/XLProduct/XLProduct/Supprting Files/XLHeader.pch";
+				INFOPLIST_FILE = "XLProduct/Supprting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XiaoLin.XLProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_CFLAGS = "-Wno-nonnull";
 			};
 			name = Debug;
 		};
 		04598DEC1FEA03DC0025CDA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24F3EC0B0C226A3C71BFEDC /* Pods-XLProduct.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = XLProduct/Info.plist;
+				DEVELOPMENT_TEAM = DG985695EK;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "/wxl/XLProduct/XLProduct/Supprting Files/XLHeader.pch";
+				INFOPLIST_FILE = "XLProduct/Supprting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XiaoLin.XLProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_CFLAGS = "-Wno-nonnull";
 			};
 			name = Release;
 		};

@@ -1,0 +1,28 @@
+//
+//  XLHeader.pch
+//  XLProduct
+//
+//  Created by Mac on 2018/1/8.
+//  Copyright © 2018年 Mac. All rights reserved.
+//
+
+#ifndef XLHeader_pch
+#define XLHeader_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//宏定义
+#import "XLMacros.h"
+#import "XLColorMacros.h"
+#import "Utils.h"
+//个人信息管理
+#import "HCAccountMgr.h"
+//APP管理
+#import "HCAppMgr.h"
+
+//第三方框架
+#import "MJExtension.h"
+#import "SDImageCache.h"
+#import "SDAutoLayout.h"
+#import "ReactiveObjC.h"
+
+#endif /* XLHeader_pch */

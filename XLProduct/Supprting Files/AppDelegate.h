@@ -17,6 +17,8 @@
 
 - (void)saveContext;
 
+//设置主控制器
+- (void)setupRootViewController;
 
 @end
 
