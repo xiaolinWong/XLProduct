@@ -7,7 +7,7 @@
 //
 
 #import "HCAccountMgr.h"
-//#import "HCAccountDBMgr.h"
+#import "HCAccountDBMgr.h"
 #import "AppDelegate.h"
 
 static HCAccountMgr *_sharedManager = nil;
@@ -33,64 +33,54 @@ static HCAccountMgr *_sharedManager = nil;
 
 #pragma mark - Public Methods
 
-////释放单利，清空账号数据库
-//- (void)clean
-//{
-//    [[HCAccountDBMgr manager] truncateTable];
-//    _sharedManager = nil;
-//}
-//
-////更新数据库的登录信息
-//- (void)updateLoginInfoToDB
-//{
-//    [[HCAccountDBMgr manager] updateLoginInfo:self.loginInfo];
-//}
-//
+//释放单利，清空账号数据库
+- (void)clean
+{
+    [[HCAccountDBMgr manager] truncateTable];
+    _sharedManager = nil;
+}
+
+//更新数据库的登录信息
+- (void)updateLoginInfoToDB
+{
+    [[HCAccountDBMgr manager] updateLoginInfo:self.loginInfo];
+}
+
 ////更新数据库的用户信息
-////- (void)updateUserInfoToDB
-////{
-////    [[HCAccountDBMgr manager] updateUserInfo:self.userInfo];
-////}
-//
-////保存用户登录信息
-//- (void)saveLoginInfoToDB
+//- (void)updateUserInfoToDB
 //{
-//    [[HCAccountDBMgr manager] insertLoginInfo:self.loginInfo];
+//    [[HCAccountDBMgr manager] updateUserInfo:self.userInfo];
 //}
-//
-//
-//
-//- (void)getLoginInfoData
-//{
-//    WEAKSELF
-//    [[HCAccountDBMgr manager] queryLastUserInfo:^(HCLoginInfo *loginInfo) {
-//        weakSelf.loginInfo = loginInfo;
-//        if (IsEmpty(loginInfo.token)) {
-//            weakSelf.isLogined=NO;
-//        }else{
-//            weakSelf.isLogined = YES;
-//        }
-//        
-//    }];
-//}
-//
-////登录
-//- (void)login
-//{
-//    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    [app setupRootViewController];
-//}
-//
-//#pragma mark - Setters & Getters
-//
-////获取登录信息
-////- (HCLoginInfo *)loginInfo
-////{
-////    if (_loginInfo == nil) {
-////
-////    }
-////    return _loginInfo;
-////}
+
+//保存用户登录信息
+- (void)saveLoginInfoToDB
+{
+    [[HCAccountDBMgr manager] insertLoginInfo:self.loginInfo];
+}
+
+
+
+- (void)getLoginInfoData
+{
+    WEAKSELF
+    [[HCAccountDBMgr manager] queryLastUserInfo:^(XLLoginInfo *loginInfo) {
+        weakSelf.loginInfo = loginInfo;
+        if (IsEmpty(loginInfo.token)) {
+            weakSelf.isLogined=NO;
+        }else{
+            weakSelf.isLogined = YES;
+        }
+    }];
+}
+
+//登录
+- (void)login
+{
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [app setupRootViewController];
+}
+
+
 
 
 @end

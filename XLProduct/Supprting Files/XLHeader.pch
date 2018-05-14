@@ -13,12 +13,18 @@
 //宏定义
 #import "XLMacros.h"
 #import "XLColorMacros.h"
-#import "Utils.h"
 //个人信息管理
 #import "HCAccountMgr.h"
+//公共网络请求
+#import "XLPubicRequsetApi.h"
 //APP管理
 #import "HCAppMgr.h"
-
+#import "HCDataMgr.h"
+//公共类
+#import "XLAlertView.h"
+#import "Utils.h"
+#import "UIView+TKUtilities.h"
+//#import "XLPublicClassManager.h"
 //第三方框架
 #import "MJExtension.h"
 #import "SDImageCache.h"

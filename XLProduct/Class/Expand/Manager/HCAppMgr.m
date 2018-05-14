@@ -89,8 +89,8 @@ static HCAppMgr *_sharedManager = nil;
 //登录
 - (void)login
 {
-//    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    [app setupRootViewController];
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [app setupRootViewController];
 }
 
 //注销
@@ -251,7 +251,7 @@ static HCAppMgr *_sharedManager = nil;
     shareBtn.frame=CGRectMake(0, width/190*130+ (height-width/190*130)/2, width, (height-width/190*130)/2-1);
     [_scrView addSubview:shareBtn];
 
-    ViewBorderRadius(_scrView, 5, 1, XLBlackColor);
+    ViewBorderRadius(_scrView, 5, 1, kXLBlackColorl);
     
     [WINDOW addSubview:_scrView];
     

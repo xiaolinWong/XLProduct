@@ -11,9 +11,8 @@
 #import <sys/sysctl.h>
 #import "sys/utsname.h"
 #import <CoreText/CoreText.h>
-//#import "CYWebViewController.h"
+#import "CYWebViewController.h"
 @implementation Utils
-
 
 #pragma mark - 网络请求基本 字段
 
@@ -458,55 +457,55 @@
     BOOL isMatch = [pred evaluateWithObject:phoneNum];
     return isMatch;
 }
-////验证是否是手机号
-//#pragma mark - phone
-//+ (NSMutableArray *)runsPhoneWithAttString:(NSMutableAttributedString *)attString  {
-//    
-//    NSMutableArray *arr=[[NSMutableArray alloc]init];
-//    NSString *textStr=@"(联系时请说明是在劳务圈看到的。)";
-//    NSMutableString * attStr = attString.mutableString;
-//    NSError *error = nil;
-//    NSString *regulaStr = @"1+[358]+\\d{9}";
-//    
-//    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regulaStr
-//                                                                           options:NSRegularExpressionCaseInsensitive
-//                                                                             error:&error];
-//    if (error == nil)
-//    {
-//        NSArray *arrayOfAllMatches = [regex matchesInString:attStr
-//                                                    options:0
-//                                                      range:NSMakeRange(0, [attStr length])];
-//        
-//        
-//        for (int ii=0; ii<arrayOfAllMatches.count; ii++) {
-//            NSTextCheckingResult *match =arrayOfAllMatches[ii];
-//            NSRange matchRange = match.range;
-//            matchRange.location=matchRange.location+17*ii;
-//            NSString * phoneStr = [attStr substringWithRange:matchRange];
-//            [attStr insertString:textStr atIndex:matchRange.location+matchRange.length];
-//            //          NSValue * valueRange = [NSValue valueWithRange:matchRange];
-//            [attString addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0xff3366) range:matchRange];
-//            [attString addAttribute:(NSString *)kCTUnderlineStyleAttributeName value:(id)[NSNumber numberWithInt:kCTUnderlineStyleSingle] range:matchRange];
-//            
-//            [arr addObject:phoneStr];
-//
-//        }
+//验证是否是手机号
+#pragma mark - phone
++ (NSMutableArray *)runsPhoneWithAttString:(NSMutableAttributedString *)attString  {
+    
+    NSMutableArray *arr=[[NSMutableArray alloc]init];
+    NSString *textStr=@"(联系时请说明是在劳务圈看到的。)";
+    NSMutableString * attStr = attString.mutableString;
+    NSError *error = nil;
+    NSString *regulaStr = @"1+[358]+\\d{9}";
+    
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regulaStr
+                                                                           options:NSRegularExpressionCaseInsensitive
+                                                                             error:&error];
+    if (error == nil)
+    {
+        NSArray *arrayOfAllMatches = [regex matchesInString:attStr
+                                                    options:0
+                                                      range:NSMakeRange(0, [attStr length])];
+        
+        
+        for (int ii=0; ii<arrayOfAllMatches.count; ii++) {
+            NSTextCheckingResult *match =arrayOfAllMatches[ii];
+            NSRange matchRange = match.range;
+            matchRange.location=matchRange.location+17*ii;
+            NSString * phoneStr = [attStr substringWithRange:matchRange];
+            [attStr insertString:textStr atIndex:matchRange.location+matchRange.length];
+            //          NSValue * valueRange = [NSValue valueWithRange:matchRange];
+            [attString addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0xff3366) range:matchRange];
+            [attString addAttribute:(NSString *)kCTUnderlineStyleAttributeName value:(id)[NSNumber numberWithInt:kCTUnderlineStyleSingle] range:matchRange];
+            
+            [arr addObject:phoneStr];
 
-//        for (NSTextCheckingResult *match in arrayOfAllMatches){
-//            NSRange matchRange = match.range;
-//            
-//           NSString * phoneStr = [attStr substringWithRange:matchRange];
-//            [attStr insertString:textStr atIndex:matchRange.location+matchRange.length];
-//            //          NSValue * valueRange = [NSValue valueWithRange:matchRange];
-//            [attString addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0xff3366) range:matchRange];
-//            [attString addAttribute:(NSString *)kCTUnderlineStyleAttributeName value:(id)[NSNumber numberWithInt:kCTUnderlineStyleSingle] range:matchRange];
-//            
-//            [arr addObject:phoneStr];
-//        }
-//    }
-//    
-//    return arr;
-//}
+        }
+
+        for (NSTextCheckingResult *match in arrayOfAllMatches){
+            NSRange matchRange = match.range;
+            
+           NSString * phoneStr = [attStr substringWithRange:matchRange];
+            [attStr insertString:textStr atIndex:matchRange.location+matchRange.length];
+            //          NSValue * valueRange = [NSValue valueWithRange:matchRange];
+            [attString addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0xff3366) range:matchRange];
+            [attString addAttribute:(NSString *)kCTUnderlineStyleAttributeName value:(id)[NSNumber numberWithInt:kCTUnderlineStyleSingle] range:matchRange];
+            
+            [arr addObject:phoneStr];
+        }
+    }
+    
+    return arr;
+}
 + (NSString *)formatterWithServer:(NSString *)birthdayStr
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -880,14 +879,14 @@
     
     return timeString;
 }
-////打开网页
-//+(void)opeWebWithUrl:(NSString *)url  andWithNav:(UINavigationController *)nav{
-//    CYWebViewController *vc=[[CYWebViewController alloc]init];
-//    vc.backIcon=IMG(@"conventional_icon_return");
-//    vc.url=[NSURL URLWithString:url];
-//    vc.loadingBarTintColor = [UIColor redColor];
-//    vc.hidesBottomBarWhenPushed=YES;
-//    [nav pushViewController:vc animated:YES];
-//}
+//打开网页
++(void)opeWebWithUrl:(NSString *)url  andWithNav:(UINavigationController *)nav{
+    CYWebViewController *vc=[[CYWebViewController alloc]init];
+    vc.backIcon=IMG(@"conventional_icon_return");
+    vc.url=[NSURL URLWithString:url];
+    vc.loadingBarTintColor = [UIColor redColor];
+    vc.hidesBottomBarWhenPushed=YES;
+    [nav pushViewController:vc animated:YES];
+}
 
 @end

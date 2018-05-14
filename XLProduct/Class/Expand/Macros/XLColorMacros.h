@@ -31,33 +31,35 @@
 #define LightGraryColor RGB(153,153,153)
 #define DarkGrayColor RGB(51,51,51)
 
+/*****APP颜色******/
 //导航栏颜色
-#define kHCNavBarColor UIColorFromRGB(0xcc2c2c)
-
-//导航栏颜色2
-#define kXLNavBarColor UIColorFromRGB(0xeeeeee)
-
+#define kHCNavBarColor UIColorFromRGB(0x659Aff)
 //背景色
-#define kHCBackgroundColor UIColorFromRGB(0xf5f8fa)
-//深灰色
-#define XL60Colorl  UIColorFromRGB(0xb8b8b8)
-//黑色
-#define XLBlackColor  UIColorFromRGB(0x323232)
-//灰色
-#define XL99Colorl UIColorFromRGB(0x757575)
-//背景灰
-#define XLBG_GrayColorl UIColorFromRGB(0xf5f5f5)
-//链接颜色
-#define XLLJColorl UIColorFromRGB(0x54c2f6)
-//深分割线
-#define XLSFGColorl UIColorFromRGB(0xd7dadb)
+#define kHCBackgroundColor UIColorFromRGB(0xfbfbfb)
+//失效按钮颜色 浅灰
+#define kXLDisAbleColor UIColorFromRGB(0xe5e5e5)
+//特殊 阴影   浅蓝
+#define kXLShadowBuleColor UIColorFromRGB(0x95b8fe)
+//特殊或者警告红色
+#define kXLWaningColor  UIColorFromRGB(0xff3157)
+//特殊红 阴影
+#define kXLShadowRedColor UIColorFromRGB(0xf4a0a9)
+//透明色
+#define CLEARCOLOR [UIColor clearColor]
 
-//浅分割线
-#define XLQFGColorl UIColorFromRGB(0xefefef)
+/*****字体颜色******/
+//纯白色
+#define kXLWhiteColor [UIColor whiteColor]
+//浅灰_辅助 白色 阴影
+#define kXLConeColorl  UIColorFromRGB(0xc1c1c1)
+//浅灰_失效 提示
+#define kXL95Color  UIColorFromRGB(0x959595)
+//深黑 默认状态文字
+#define kXLBlackColorl UIColorFromRGB(0x6a6a6a)
+//黑色 标题
+#define kXLTitleBlackColorl UIColorFromRGB(0x282828)
 
-//辅助橙
-#define XLQrangeColorl UIColorFromRGB(0xf27200)
-
+//占位图
 #define PlaceholderImage IMG(@"placeload")
 #define PlaceholderBigImage IMG(@"placeload_2")
 
@@ -132,6 +134,22 @@
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES]
 
+// View 圆角加阴影
+#define ViewShadowRadius(View, Radius, X, Y, Color, Opacity,sRadius)\
+\
+View.layer.cornerRadius=Radius;\
+View.layer.shadowColor=[Color CGColor];\
+View.layer.shadowOffset=CGSizeMake(X, Y);\
+View.layer.shadowOpacity=Opacity;\
+View.layer.shadowRadius=sRadius;
+
+//view 阴影
+#define ViewShadow(View, X, Y, Color, Opacity,sRadius)\
+\
+View.layer.shadowColor=[Color CGColor];\
+View.layer.shadowOffset=CGSizeMake(X, Y);\
+View.layer.shadowOpacity=Opacity;\
+View.layer.shadowRadius=sRadius;
 
 
 #endif /* XLColorMacros_h */

@@ -23,7 +23,7 @@
 //验证手机号码合法性
 + (BOOL)checkPhoneNum:(NSString *)phoneNum;
 //验证是否包含手机号
-//+ (NSMutableArray *)runsPhoneWithAttString:(NSMutableAttributedString *)attString ;
++ (NSMutableArray *)runsPhoneWithAttString:(NSMutableAttributedString *)attString ;
 
 //验证密码 6-20位数字和字母组成
 + (BOOL)checkPassWord:(NSString *)pwd;

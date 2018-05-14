@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "YTKNetworkConfig.h"
+#import "XLRootTabBarController.h"
+#import "XLWelComeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,9 +23,6 @@
     //设置主控制器
     [self setupRootViewController];
     
-    
-    
-    
     return YES;
 }
 
@@ -33,16 +32,14 @@
    
     if ([HCAppMgr manager].showInstroView)
     {
-        //self.window.rootViewController = [[HCWelcomViewController alloc] init];
-        [self chageRootViewControll: [[UIViewController alloc] init] animate:YES];
+        [self chageRootViewControll: [[XLWelComeViewController alloc] init] animate:YES];
     }else
     {
         [[HCAccountMgr manager] getLoginInfoData];
         
         if ([HCAccountMgr manager].isLogined) {
             
-           
-            [self chageRootViewControll: [[UIViewController alloc] init] animate:YES];
+            [self chageRootViewControll: [[XLRootTabBarController alloc] init] animate:YES];
             
         }else{
             UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"XLLoginSB" bundle:nil];

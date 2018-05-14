@@ -16,7 +16,7 @@
 #define kAPIURL          @"http://www.baidu/api/"            //外网
 #define kAPIURLText          @"http://baidu/api/"            //测试
 #define kIMGURL        @"http://:8080/hcn-web-0.1/"
-
+#define kURL           @"http://www.baidu.com/"
 //appstore更新地址1067858360
 //#define APP_STORE_URL   @""
 //#define APP_STORE_URL @""
@@ -51,7 +51,7 @@
 //帐号被踢下线
 #define kHCNotificationOffline              @"kHCNotificationOffline"
 
-#define kXLShowNoticeTime @"kXLShowNoticeTime"
+#define kXLShowNoticeTime                   @"kXLShowNoticeTime"
 
 #pragma mark  获取frame大小
 /* ********************获取frame大小********************* */
@@ -93,7 +93,8 @@
 
 //获取系统版本
 #define HCSystemVersion [[UIDevice currentDevice] systemVersion]
-
+//NSUserDefult
+#define kXLUserDefult  [NSUserDefaults standardUserDefaults]
 //获取当前语言
 #define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 
