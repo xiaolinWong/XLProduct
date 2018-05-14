@@ -68,11 +68,11 @@
 {
     
     //设置网络端口
-//    YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
-//    config.baseUrl =kAPIURL;//外部
-    //    config.baseUrl = kAPIURLText;//测试
-    //    config.cdnUrl =  kIMGURL;
-    //添加token
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.baseUrl =kAPIURL;//外部
+    config.baseUrl = kAPIURLText;//测试
+    config.cdnUrl =  kIMGURL;
+//    添加token
 //    [NSURLProtocol registerClass:[XLMyURLProtocol class]];
 }
 

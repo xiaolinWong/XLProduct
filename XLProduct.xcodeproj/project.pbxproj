@@ -444,13 +444,13 @@
 			isa = PBXGroup;
 			children = (
 				679044F020A91DB7001634DD /* XLPubicWhiteViewController.h */,
-				679044F120A91DB7001634DD /* XLTableViewController.h */,
-				679044F220A91DB7001634DD /* XLViewController.h */,
-				679044F320A91DB7001634DD /* XLRootTabBarController.m */,
-				679044F420A91DB7001634DD /* XLTableViewController.m */,
 				679044F520A91DB7001634DD /* XLPubicWhiteViewController.m */,
+				679044F120A91DB7001634DD /* XLTableViewController.h */,
+				679044F420A91DB7001634DD /* XLTableViewController.m */,
+				679044F220A91DB7001634DD /* XLViewController.h */,
 				679044F620A91DB7001634DD /* XLViewController.m */,
 				679044F720A91DB7001634DD /* XLRootTabBarController.h */,
+				679044F320A91DB7001634DD /* XLRootTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -465,8 +465,8 @@
 		679044F920A91DB7001634DD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				679044FA20A91DB7001634DD /* XLBarButtonItem.m */,
 				679044FB20A91DB7001634DD /* XLBarButtonItem.h */,
+				679044FA20A91DB7001634DD /* XLBarButtonItem.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
